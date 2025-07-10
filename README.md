@@ -126,7 +126,7 @@ All SIEM alerts are normalized into:
 
 Ensure the environment is activated, then:
 ```bash
-pytest tests/
+python -m pytest tests/
 ```
 
 ---
@@ -148,12 +148,6 @@ To add a new SIEM:
 ✅ Create a feature branch.  
 ✅ Commit and push your changes.  
 ✅ Open a pull request.
-
----
-
-## 🛡️ License
-
-MIT License © 2025 Alaa Fawzy
 
 ---
 
