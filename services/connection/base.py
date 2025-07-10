@@ -1,9 +1,7 @@
-from abc import ABC, abstractmethod
+import abc
 
-class BaseConnector(ABC):
-    def __init__(self, credentials,timestamp):
-        self.credentials = credentials
-        self.timestamp = timestamp
-    @abstractmethod
+class BaseConnector(abc.ABC):
+    @abc.abstractmethod
     def connect(self):
+        """Connect to the SIEM and return raw alerts"""
         pass
